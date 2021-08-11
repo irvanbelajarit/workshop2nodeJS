@@ -1,1 +1,39 @@
 <h1>Halaman Contact</h1>
+<a href="/contact/add" class="btn btn-primary mb-2">Tambah Data Contact</a>
+
+<% if (msg.length !==0) { %>
+<div class="alert alert-info alert-dismissible fade show" role="alert">
+  <strong><%= msg %> </strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
+
+<table class="table">
+  <thead>
+    <th scope="col">Nama</th>
+    <th scope="col">no HP</th>
+    <th scope="col">email</th>
+    <th scope="col">action</th>
+  </thead>
+  <tbody>
+    <% contacts.forEach(c => { %>
+    <tr>
+      <td><%= c.nama %></td>
+      <td><%= c.nohp %></td>
+      <td><%= c.email %></td>
+      <td>
+        <a
+          href="/contact/<%= c.id %>"
+          class="btn btn-primary badge rounded-pill"
+          >Detail</a
+        >
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>

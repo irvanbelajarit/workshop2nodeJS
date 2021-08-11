@@ -10,9 +10,16 @@
   "author": "Irvan",
   "license": "ISC",
   "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cookies-parser": "^1.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.5",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
