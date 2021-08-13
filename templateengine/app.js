@@ -194,7 +194,7 @@ app.put(
   (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      res.render("tambah-data", {
+      res.render("edit-data", {
         title: "form Tambah data kontak",
         layout: "layouts/main-layout",
         errors: errors.array(),
